@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="id_visual.css" />
+    <title>DrivenEats</title>
+    <link rel="icon" href="favicon.png" type=image/x-icon />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo"> 
+            <h1>DrivenEats</h1> 
+        </div>
+
+        <div class="slogan">
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+        
+    
+    </header>
+
+    <main>
+        <section title="pratos">
+
+            <h3>Primeiro, seu prato</h3>
+
+            <nav title="Menu de Comida">
+
+            <article class="" id="prato_01" onclick='escolheritem(this)'>
+                <img src="./pic/meat.jpg" alt="">
+                <div>
+                    <h1>Carnes</h1>
+                    <h2>Opção para os meatlovers</h2>
+                    <div class="valor">
+                        <h3>R$ 20,00</h3>
+                        <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="" id="prato_02" onclick='escolheritem(this)'>
+                <img src="./pic/pasta.jpg" alt="">
+                <div>
+                    <h1>Massas</h1>
+                    <h2>Essa comida é massa demais</h2>
+                    <div class="valor">
+                        <h3>R$ 18,39</h3>
+                        <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </article>
+
+            <article class="" id="prato_03" onclick='escolheritem(this)'>
+                <img src="./pic/vegan.jpg" alt="">
+                <div>
+                    <h1>Vegana</h1>
+                    <h2>Libere o verde em você</h2>
+                    <div class="valor">
+                        <h3> R$ 15,70</h3>
+                        <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </article>
+
+            </nav>
+
+        </section>
+
+        <section title="bebidas">
+
+            <h3>Agora, sua bebida</h3>
+
+            <nav title="Menu de Bebidas">
+
+                <article class="" id="bebida_01" onclick='escolheritem(this)'>
+                    <img src="./pic/soda.jpg" alt="">
+                    <div>
+                        <h1>Coquinha gelada</h1>
+                        <h2>É para mim!</h2>
+                        <div class="valor">
+                            <h3> R$ 7,31</h3>
+                            <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="" id="prato_02" onclick='escolheritem(this)'>
+                    <img src="./pic/juice.jfif" alt="">
+                    <div>
+                        <h1>Suquinho gelado</h1>
+                        <h2>Só natural</h2>
+                        <div class="valor">
+                            <h3> R$ 9,00</h3>
+                            <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="" id="prato_03" onclick='escolheritem(this)'>
+                    <img src="./pic/water.jfif" alt="">
+                    <div>
+                        <h1>Águinha gelada</h1>
+                        <h2>Nada como pagar por um direito de todos</h2>
+                        <div class="valor">
+                            <h3> R$ 3,52</h3>
+                            <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </article>
+
+            </nav>
+
+        </section>
+
+        <section title="sobremesas">
+            <h3>Por fim, sua sobremesa</h3>
+            <nav title="Menu de Sobremesa">
+                <article class="" id="sobremesa_01" onclick='escolheritem(this)'>
+                    <img src="./pic/donut.jpg" alt="">
+                    <div>
+                        <h1>Donut</h1>
+                        <h2>From USA with love</h2>
+                        <div class="valor">
+                            <h3> R$ 6,00</h3>
+                            <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </article>
+                <article class="" id="sobremesa_02" onclick='escolheritem(this)'>
+                    <img src="./pic/pudim.jpg" alt="">
+                    <div>
+                        <h1>Pudim</h1>
+                        <h2>Sem igual</h2>
+                        <div class="valor">
+                            <h3> R$ 3,55</h3>
+                            <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </article>
+                <article class="" id="sobremesa_03" onclick='escolheritem(this)'>
+                    <img src="./pic/brigadeiro.jpg" alt="">
+                    <div>
+                        <h1>Brigadeiro</h1>
+                        <h2>No céu só tem isso</h2>
+                        <div class="valor">
+                            <h3> R$ 5,10</h3>
+                            <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </article> 
+            </nav>
+
+        </section>
+    </main>
+
+    <footer>
+
+            <button id="btn1" onclick='finalizarpedido()'></button>
+
+
+    </footer>
+
+<!--Menu de confirmar pedido-->
+<div id="Menu_Confirmar" class="confirmar hidden">
+<span class="pedido_final">
+<h1>Confirme seu pedido</h1>
+<div class="itemxpreco">
+<h2 id="PFN">Prato</h2>
+<h4 id="PFP">praseço</h4>
+</div>
+<div class="itemxpreco">
+<h2 id="BFN">Bebida</h2>
+<h4 id="BFP">preçasaso</h4>
+</div>
+<div class="itemxpreco">
+<h2 id="SFN">sobremesa</h2>
+<h4 id="SFP">preçoasas</h4>
+</div>
+<div class="totalxpreco">
+<h1>Total</h1>
+<h1 id="TFP">preçoasasas</h1>
+</div>
+
+<div id="btn2" onclick='confirmar()'>Tudo certo, pode pedir!</div>
+<h3 onclick='cancelar()'>Cancelar</h3>
+</span>
+</div>
+<!--Menu de confirmar pedido-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
